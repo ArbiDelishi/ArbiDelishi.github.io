@@ -558,6 +558,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  cursor: pointer;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -571,6 +572,7 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  cursor: pointer;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -583,6 +585,7 @@ section {
   transition: all ease-in-out 0.3s;
   display: flex;
   justify-content: center;
+    cursor: pointer;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
@@ -591,7 +594,8 @@ section {
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
-  width: 50%;
+  width: 30%;
+    cursor: pointer;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -608,11 +612,13 @@ section {
   right: 0;
   bottom: 0;
   opacity: 1;
+
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
-  bottom: 0;
+  bottom: 100px;
+
 }
 
 /*--------------------------------------------------------------
@@ -1125,3 +1131,4 @@ section {
   float: left;
   width: 30%;
 }
+
