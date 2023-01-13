@@ -1155,7 +1155,7 @@ padding: 2%;
 .modal-header {
   padding: 0px 16px;
   background-color: rgba(20, 157, 221, 0.75);
-  color: white;
+  color: black;
 }
 
 .modal-title{
@@ -1232,17 +1232,20 @@ padding: 2%;
 	
 	.InfoCardOnRow{
 	  width: 100%;
+	  position:relative;
 	  
 	}
 
 
 	.InfoCardSecondOnRow{
 	  width: 100%;
+	  position:relative;
 	}
 
 
 	.InfoCardFirstOnRow{
 	  width: 100%;
+	  position:relative;
 	}
 
 
