@@ -594,7 +594,7 @@ section {
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
-  width: 60%;
+padding: 2%;
     cursor: pointer;
 }
 
