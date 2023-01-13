@@ -1192,6 +1192,11 @@ padding: 2%;
 	}
 	
 	
+	.section-padding{
+		height: 300px;
+	}
+
+
 	.InfoCardOnRow{
 	  float: right;
 	  width: 30%;
@@ -1258,3 +1263,5 @@ padding: 2%;
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}
 }
+
+

@@ -44,11 +44,17 @@
    * Navbar links active state on scroll
    */
   let navbarlinks = select('#navbar .scrollto', true)
+  console.log(navbarlinks)
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
+	  console.log(navbarlink.hash)
+	  console.log(section.offsetTop)
+	  console.log(section.offsetHeight)
+	  console.log(position)
+	  console.log("________")
       if (!section) return
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
         navbarlink.classList.add('active')
