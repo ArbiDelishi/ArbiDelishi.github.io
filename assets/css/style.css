@@ -1117,24 +1117,6 @@ padding: 2%;
 # Custom
 --------------------------------------------------------------*/
 
-.InfoCardOnRow{
-  float: right;
-  width: 30%;
-  
-}
-
-
-.InfoCardSecondOnRow{
-  float: left;
-  width: 30%;
-  margin-left: 9%;
-}
-
-
-.InfoCardFirstOnRow{
-  float: left;
-  width: 30%;
-}
 
 
 
@@ -1173,7 +1155,7 @@ padding: 2%;
 .modal-header {
   padding: 0px 16px;
   background-color: rgba(20, 157, 221, 0.75);
-  color: black;
+  color: white;
 }
 
 .modal-title{
@@ -1208,6 +1190,28 @@ padding: 2%;
 	  animation-name: animatetop;
 	  animation-duration: 0.4s
 	}
+	
+	
+	.InfoCardOnRow{
+	  float: right;
+	  width: 30%;
+	  
+	}
+
+
+	.InfoCardSecondOnRow{
+	  float: left;
+	  width: 30%;
+	  margin-left: 9%;
+	}
+
+
+	.InfoCardFirstOnRow{
+	  float: left;
+	  width: 30%;
+	}
+
+
 }
 
 
@@ -1225,6 +1229,23 @@ padding: 2%;
 	  animation-name: animatetop;
 	  animation-duration: 0.4s
 	}
+	
+	.InfoCardOnRow{
+	  width: 100%;
+	  
+	}
+
+
+	.InfoCardSecondOnRow{
+	  width: 100%;
+	}
+
+
+	.InfoCardFirstOnRow{
+	  width: 100%;
+	}
+
+
 }
 
 
