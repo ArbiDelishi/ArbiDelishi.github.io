@@ -1191,19 +1191,23 @@ padding: 2%;
   color: white;
 }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  margin-top: 15%; 
-  margin-left: 30%; 
-  margin-bottom: 10%;
-  border: 1px solid #888;
-  width: 60%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  animation-name: animatetop;
-  animation-duration: 0.4s
+
+
+@media only screen and (min-width: 771px ){
+	/* Modal Content */
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: auto;
+	  margin-top: 15%; 
+	  margin-left: 30%; 
+	  margin-bottom: 10%;
+	  border: 1px solid #888;
+	  width: 60%;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	  animation-name: animatetop;
+	  animation-duration: 0.4s
+	}
 }
 
 
