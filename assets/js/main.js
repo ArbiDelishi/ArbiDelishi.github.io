@@ -271,7 +271,7 @@ var modalFabbrica = document.getElementById("laFabbricaDelleParoleModal");
 var btnFabbrica = document.getElementById("laFabbricaDelleParoleBtn");
 
 // Get the <span> element that closes the modal
-var spanFabbrica = document.getElementsByClassName("close")[0];
+var spanFabbrica = document.getElementById("closeFabbrica");
 
 // When the user clicks on the button, open the modal
 btnFabbrica.onclick = function() {
@@ -283,12 +283,6 @@ spanFabbrica.onclick = function() {
   modalFabbrica.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalFabbrica) {
-    modalFabbrica.style.display = "none";
-  }
-}
 
 
 // Get the modal
@@ -298,7 +292,7 @@ var modalSognare = document.getElementById("nonSmettereMaiDiSognareModal");
 var btnSognare = document.getElementById("nonSmettereMaiDiSognareBtn");
 
 // Get the <span> element that closes the modal
-var spanSoganre = document.getElementsByClassName("close")[0];
+var spanSoganre = document.getElementById("closeSognare");
 
 // When the user clicks on the button, open the modal
 btnSognare.onclick = function() {
@@ -310,13 +304,6 @@ spanSoganre.onclick = function() {
   modalSognare.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalSognare) {
-    modalSognare.style.display = "none";
-  }
-}
-
 
 // Get the modal
 var modalOsole = document.getElementById("osoleMioModal");
@@ -325,7 +312,7 @@ var modalOsole = document.getElementById("osoleMioModal");
 var btnOsole = document.getElementById("osoleMioBtn");
 
 // Get the <span> element that closes the modal
-var spanOsole = document.getElementsByClassName("close")[0];
+var spanOsole = document.getElementById("closeSole");
 
 // When the user clicks on the button, open the modal
 btnOsole.onclick = function() {
@@ -337,12 +324,6 @@ spanOsole.onclick = function() {
   modalOsole.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalOsole) {
-    modalOsole.style.display = "none";
-  }
-}
 
 
 
@@ -354,7 +335,7 @@ var modalRooftop = document.getElementById("rooftopModal");
 var btnRooftop = document.getElementById("rooftopBtn");
 
 // Get the <span> element that closes the modal
-var spanRooftop = document.getElementsByClassName("close")[0];
+var spanRooftop = document.getElementById("closeRooftop");
 
 // When the user clicks on the button, open the modal
 btnRooftop.onclick = function() {
@@ -366,12 +347,6 @@ spanRooftop.onclick = function() {
   modalRooftop.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalRooftop) {
-    modalRooftop.style.display = "none";
-  }
-}
 
 
 
@@ -382,7 +357,7 @@ var modalSirane = document.getElementById("siraneModal");
 var btnSirane = document.getElementById("siraneBtn");
 
 // Get the <span> element that closes the modal
-var spanSirane = document.getElementsByClassName("close")[0];
+var spanSirane = document.getElementById("closeSirane");
 
 // When the user clicks on the button, open the modal
 btnSirane.onclick = function() {
@@ -394,12 +369,6 @@ spanSirane.onclick = function() {
   modalSirane.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalSirane) {
-    modalSirane.style.display = "none";
-  }
-}
 
 
 
@@ -410,7 +379,7 @@ var modalColore = document.getElementById("coloreModal");
 var btnColore = document.getElementById("coloreBtn");
 
 // Get the <span> element that closes the modal
-var spanColore = document.getElementsByClassName("close")[0];
+var spanColore = document.getElementById("closeColore");
 
 // When the user clicks on the button, open the modal
 btnColore.onclick = function() {
@@ -426,6 +395,19 @@ spanColore.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modalColore) {
     modalColore.style.display = "none";
-  }
+  } else if (event.target == modalRooftop) {
+    modalRooftop.style.display = "none";
+  }  else if (event.target == modalOsole) {
+    modalOsole.style.display = "none";
+  }  
+  else if (event.target == modalSirane) {
+    modalSirane.style.display = "none";
+  }  
+  else if (event.target == modalSognare) {
+    modalSognare.style.display = "none";
+  }  
+  else if (event.target == modalFabbrica) {
+    modalFabbrica.style.display = "none";
+  }  
 }
 
