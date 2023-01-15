@@ -593,7 +593,7 @@ section {
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
-padding: 2%;
+	padding: 2%;
     cursor: pointer;
 }
 
@@ -616,7 +616,7 @@ padding: 2%;
 
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
-  bottom: 100px;
+  bottom: 80px;
 
 }
 
