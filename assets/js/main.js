@@ -44,17 +44,12 @@
    * Navbar links active state on scroll
    */
   let navbarlinks = select('#navbar .scrollto', true)
-  console.log(navbarlinks)
+
   const navbarlinksActive = () => {
     let position = window.scrollY + 200
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
-	  console.log(navbarlink.hash)
-	  console.log(section.offsetTop)
-	  console.log(section.offsetHeight)
-	  console.log(position)
-	  console.log("________")
       if (!section) return
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
         navbarlink.classList.add('active')
@@ -270,28 +265,167 @@
 
 
 // Get the modal
-var modal = document.getElementById("myModal");
+var modalFabbrica = document.getElementById("laFabbricaDelleParoleModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btnFabbrica = document.getElementById("laFabbricaDelleParoleBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spanFabbrica = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+btnFabbrica.onclick = function() {
+  modalFabbrica.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+spanFabbrica.onclick = function() {
+  modalFabbrica.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modalFabbrica) {
+    modalFabbrica.style.display = "none";
+  }
+}
+
+
+// Get the modal
+var modalSognare = document.getElementById("nonSmettereMaiDiSognareModal");
+
+// Get the button that opens the modal
+var btnSognare = document.getElementById("nonSmettereMaiDiSognareBtn");
+
+// Get the <span> element that closes the modal
+var spanSoganre = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btnSognare.onclick = function() {
+  modalSognare.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanSoganre.onclick = function() {
+  modalSognare.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalSognare) {
+    modalSognare.style.display = "none";
+  }
+}
+
+
+// Get the modal
+var modalOsole = document.getElementById("osoleMioModal");
+
+// Get the button that opens the modal
+var btnOsole = document.getElementById("osoleMioBtn");
+
+// Get the <span> element that closes the modal
+var spanOsole = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btnOsole.onclick = function() {
+  modalOsole.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanOsole.onclick = function() {
+  modalOsole.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalOsole) {
+    modalOsole.style.display = "none";
+  }
+}
+
+
+
+
+// Get the modal
+var modalRooftop = document.getElementById("rooftopModal");
+
+// Get the button that opens the modal
+var btnRooftop = document.getElementById("rooftopBtn");
+
+// Get the <span> element that closes the modal
+var spanRooftop = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btnRooftop.onclick = function() {
+  modalRooftop.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanRooftop.onclick = function() {
+  modalRooftop.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalRooftop) {
+    modalRooftop.style.display = "none";
+  }
+}
+
+
+
+// Get the modal
+var modalSirane = document.getElementById("siraneModal");
+
+// Get the button that opens the modal
+var btnSirane = document.getElementById("siraneBtn");
+
+// Get the <span> element that closes the modal
+var spanSirane = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btnSirane.onclick = function() {
+  modalSirane.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanSirane.onclick = function() {
+  modalSirane.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalSirane) {
+    modalSirane.style.display = "none";
+  }
+}
+
+
+
+// Get the modal
+var modalColore = document.getElementById("coloreModal");
+
+// Get the button that opens the modal
+var btnColore = document.getElementById("coloreBtn");
+
+// Get the <span> element that closes the modal
+var spanColore = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btnColore.onclick = function() {
+  modalColore.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanColore.onclick = function() {
+  modalColore.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalColore) {
+    modalColore.style.display = "none";
   }
 }
 
