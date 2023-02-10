@@ -411,3 +411,11 @@ window.onclick = function(event) {
   }  
 }
 
+
+function websiteVisits(response) {
+	
+	for (let i = 0; i < 10; i++) {
+	  console.log(response.value);
+	}
+    
+}
